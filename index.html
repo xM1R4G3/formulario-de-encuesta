@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de encuesta</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 id="title">Formulario para FreeCodeCamp</h1>
+    <p id="description">Formulario inspirado en uno de mis hobbies</p>
+    <form action="submit" id="survey-form">
+        <fieldset>
+            <label for="name-label">Nombre<input type="text" id="name-label" name="name" placeholder="Ej: Pepito" required></label>
+            <label for="surname-label">Apellido<input type="text" id="surname-label" name="surname" placeholder="Ej: Flores" required></label>
+            <label for="email-label">Email<input type="email" id="email-label" name="email" placeholder="Ej: pepito@123.com" required></label>
+            <label for="edad-label">Edad<input type="number" id="edad-label" name="edad" min="13" max="99"></label>
+        </fieldset>
+        <fieldset>
+            <legend>¿Tus carreras preferidas son diurnas o nocturnas?</legend>
+            <label for="radio"><input type="radio" name="jornada" id="radio" checked>Diurnas</label>
+            <label for="radio"><input type="radio" name="jornada" id="radio">Nocturnas</label>
+            <label for="dropdown">¿Cual es tu escuderia favorita?
+                <select id="dropdown" name="desplegable">
+                    <option value="">(Escoge una)</option>
+                    <option value="1">Ferrari</option>
+                    <option value="2">Red Bull</option>
+                    <option value="3">Mercedez</option>
+                    <option value="4">Mclaren</option>
+                </select>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Selecciona tus circuitos favoritos: </legend>
+            <label for="check"><input type="checkbox" name="check" id="check">Monaco</label>
+            <label for="check"><input type="checkbox" name="check" id="check">Sao Pablo</label>
+            <label for="check"><input type="checkbox" name="check" id="check">Australia</label>
+            <label for="check"><input type="checkbox" name="check" id="check">Monza</label>
+            <label for="check"><input type="checkbox" name="check" id="check">Belgica</label>
+            <label for="check"><input type="checkbox" name="check" id="check">EEUU</label>
+            <label for="comentarios">Agrega un comentario: <textarea name="comentarios" id="comentarios" cols="30" rows="10"></textarea></label>
+        </fieldset>
+        <label for="submit"><input id="submit" type="button" value="submit"></label>
+    </form>
+    
+</body>
+</html> 
